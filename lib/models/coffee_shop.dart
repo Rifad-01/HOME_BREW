@@ -35,7 +35,7 @@ class CoffeeShop extends ChangeNotifier{
 
   //  user cart
 
-  List<Coffee> _userCart = [];
+  List<Coffee> userCart = [];
 
   // get coffee list
 
@@ -43,14 +43,14 @@ class CoffeeShop extends ChangeNotifier{
 
   // add item to cart
   void additemToCart(Coffee coffee){
-    _userCart.add(coffee);
+    userCart.add(coffee);
     notifyListeners();
   }
 
   // remove item from cart
 
   void removeItemFromCart(Coffee coffee){
-    _userCart.remove(coffee);
+    userCart.remove(coffee);
     notifyListeners();
   }
 
