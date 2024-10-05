@@ -1,5 +1,6 @@
 import 'package:first_app/models/coffee_shop.dart';
 import 'package:first_app/pages/home_page.dart';
+import 'package:first_app/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => CoffeeShop(),
       builder: (context, child) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home: IntroPage(),
       ),
     );
   }
