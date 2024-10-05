@@ -15,6 +15,17 @@ class _ShopPageState extends State<ShopPage> {
 // add coffee to cart
   void addToCart(Coffee coffee) {
     Provider.of<CoffeeShop>(context, listen: false).additemToCart(coffee);
+
+    // let user know it item added successfully
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Center(child: Text("Successfully added to cart")),
+        titleTextStyle: TextStyle(color: Colors.white,fontSize: 22),
+        backgroundColor: Colors.brown,
+      ),
+    );
   }
 
   @override
@@ -46,7 +57,7 @@ class _ShopPageState extends State<ShopPage> {
                       // return the title for this coffee
                       return CoffeeTile(
                         coffee: eachCoffee,
-                        icon: Icon(Icons.delete),
+                        icon: Icon(Icons.add),
                         onPressed: () => addToCart(eachCoffee),
                       );
                     }),

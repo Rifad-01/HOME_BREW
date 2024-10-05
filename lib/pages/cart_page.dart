@@ -12,11 +12,10 @@ class CartPage extends StatefulWidget {
 }
 
 class _CartPageState extends State<CartPage> {
-
 // remove item from cart
-void removeFromCart(Coffee coffee){
-  Provider.of<CoffeeShop>(context, listen: false).removeItemFromCart(coffee);
-}
+  void removeFromCart(Coffee coffee) {
+    Provider.of<CoffeeShop>(context, listen: false).removeItemFromCart(coffee);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,18 +34,33 @@ void removeFromCart(Coffee coffee){
               // list to cart items
               Expanded(
                 child: ListView.builder(
-                  itemCount: value.userCart.length,
-                  itemBuilder: (context, index) {
-                  // get individual cart items
-                  Coffee eachCoffee = value.userCart[index];
+                    itemCount: value.userCart.length,
+                    itemBuilder: (context, index) {
+                      // get individual cart items
+                      Coffee eachCoffee = value.userCart[index];
 
-                  // return coffee tile
-                  return CoffeeTile(
-                    coffee: eachCoffee,
-                    onPressed: () => removeFromCart(eachCoffee),
-                    icon: Icon(Icons.delete),
-                  );
-                }),
+                      // return coffee tile
+                      return CoffeeTile(
+                        coffee: eachCoffee,
+                        onPressed: () => removeFromCart(eachCoffee),
+                        icon: Icon(Icons.delete),
+                      );
+                    }),
+              ),
+
+              // pay button
+              Container(
+                padding: const EdgeInsets.all(25),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    color: Colors.brown[500],
+                    borderRadius: BorderRadius.circular(12)),
+                child: const Center(
+                  child: Text(
+                    "Pay now",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
               )
             ],
           ),
