@@ -49,19 +49,24 @@ class _CartPageState extends State<CartPage> {
               ),
 
               // pay button
-              Container(
-                padding: const EdgeInsets.all(25),
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: Colors.brown[500],
-                    borderRadius: BorderRadius.circular(12)),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.all(25),
+                  backgroundColor: Colors.brown[500],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () {
+                  print("Pay now button pressed");
+                },
                 child: const Center(
                   child: Text(
                     "Pay now",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
