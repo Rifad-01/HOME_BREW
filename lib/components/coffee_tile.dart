@@ -22,7 +22,7 @@ class CoffeeTile extends StatelessWidget {
       child: ListTile(
         title: Text(coffee.name),
         subtitle: Text(coffee.price),
-        // leading: Image.asset(coffee.imagepath),
+        leading: Image.asset(coffee.imagepath),
         trailing: IconButton(
           icon: icon,
           onPressed: onPressed,
