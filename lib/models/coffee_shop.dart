@@ -16,8 +16,8 @@ class CoffeeShop extends ChangeNotifier{
 
     Coffee(
       name: 'Latte',
-      price: '4.20',
-      imagepath: "images/latte.jpg",
+      price: '4.50',
+      imagepath: "images/latte.png",
     ),
 
     // espresso coffee
@@ -32,8 +32,8 @@ class CoffeeShop extends ChangeNotifier{
 
     Coffee(
       name: 'Iced Coffee',
-      price: '4.10',
-      imagepath: "images/cold.jpg",
+      price: '5.10',
+      imagepath: "images/cold.png",
     ),
   ];
 

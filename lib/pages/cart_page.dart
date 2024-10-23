@@ -61,7 +61,7 @@ class _CartPageState extends State<CartPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

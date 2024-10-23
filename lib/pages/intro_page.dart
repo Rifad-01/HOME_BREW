@@ -27,7 +27,7 @@ class IntroPage extends StatelessWidget {
             // icon
             Padding(
               padding: const EdgeInsets.all(25.0),
-              child: Image.asset("images/machine.png"),
+              child: Image.asset("images/machine.png",width: 125,height: 125,),
             ),
 
             const SizedBox(height: 25),
@@ -35,7 +35,7 @@ class IntroPage extends StatelessWidget {
             Text(
               "WHERE EVERY SIP FEELS LIKE HOME",
               style:
-                  GoogleFonts.dmSerifDisplay(fontSize: 44, color: Colors.white),
+                  GoogleFonts.dmSerifDisplay(fontSize: 24, color: Colors.white),
             ),
 
             const SizedBox(height: 10),
@@ -67,10 +67,10 @@ class IntroPage extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  "GET START",
-                  selectionColor: Colors.white24,
+                  "Enter shop",
+                  selectionColor: Color.fromRGBO(78, 52, 46, 1),
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     
