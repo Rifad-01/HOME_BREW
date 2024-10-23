@@ -8,7 +8,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[600],
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: Column(
@@ -16,26 +16,31 @@ class IntroPage extends StatelessWidget {
           children: [
             const SizedBox(height: 25),
             // shop name
-            Text(
-              "HOME BREW",
-              style:
-                  GoogleFonts.dmSerifDisplay(fontSize: 28, color: Colors.white),
+            Center(
+              child: Text(
+                "HOME BREW",
+                style:
+                    GoogleFonts.dmSerifDisplay(fontSize: 28, color: Colors.brown[800]),
+              ),
             ),
 
             const SizedBox(height: 25),
 
             // icon
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: Image.asset("images/machine.png",width: 125,height: 125,),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(right: 70,left:50,top:70 ,bottom: 25),
+                child: Image.asset("images/machine.png",width: 150,height: 150,),
+              ),
             ),
+            
 
             const SizedBox(height: 25),
             // title
             Text(
               "WHERE EVERY SIP FEELS LIKE HOME",
               style:
-                  GoogleFonts.dmSerifDisplay(fontSize: 24, color: Colors.white),
+                  GoogleFonts.dmSerifDisplay(fontSize: 24, color: Colors.brown[800]),
             ),
 
             const SizedBox(height: 10),
@@ -43,7 +48,7 @@ class IntroPage extends StatelessWidget {
             // subtitle
             Text("Experience the warmth of home with every sip of our carefully crafted coffee, anytime and anywhere",
             style: TextStyle(
-              color: Colors.grey[300],
+              color: Colors.brown[700],
               height: 2,
             ),
              
@@ -60,7 +65,7 @@ class IntroPage extends StatelessWidget {
                 },
                 style: TextButton.styleFrom(
                    // Text color
-                  backgroundColor: Colors.brown[400], // Background color
+                  backgroundColor: Colors.brown[900], // Background color
                   padding: const EdgeInsets.all(25.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20), // Rounded corners
@@ -68,7 +73,7 @@ class IntroPage extends StatelessWidget {
                 ),
                 child: const Text(
                   "Enter shop",
-                  selectionColor: Color.fromRGBO(78, 52, 46, 1),
+                  selectionColor: Colors.brown,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
