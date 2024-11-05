@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class MybottomNavBar extends StatelessWidget {
-  void Function(int)? onTabChange;
+  final Function(int)? onTabChange;
    MybottomNavBar({super.key, required this.onTabChange,});
 
   @override

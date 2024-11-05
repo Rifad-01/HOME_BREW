@@ -1,5 +1,4 @@
 import 'package:first_app/models/coffee_shop.dart';
-import 'package:first_app/pages/home_page.dart';
 import 'package:first_app/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

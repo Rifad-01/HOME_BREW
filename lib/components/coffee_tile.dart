@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CoffeeTile extends StatelessWidget {
   final Coffee coffee;
-  void Function()? onPressed;
+  final Function()? onPressed;
   final Widget icon;
   CoffeeTile({
     super.key,
